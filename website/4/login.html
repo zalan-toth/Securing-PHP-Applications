@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>Login form with loads of validated input options (client & server sided)</h2>
+    <form action="login.php" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="student_id">Student ID (8 digits):</label>
+            <input type="text" id="student_id" name="student_id" pattern="\d{8}" title="Give me 8 digits!" required>
+        </div>
+
+        <div>
+            <label for="filename">Filename:</label>
+            <input type="text" id="filename" name="filename" pattern="^[a-zA-Z0-9_\-]+\.[a-zA-Z0-9]{1,5}$" title="Valid filenames only" required>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+<br>
+<h2>2nd form (only server sided validation!)</h2>
+    <form action="login.php" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="student_id">Student ID (8 digits):</label>
+            <input type="text" id="student_id" name="student_id" >
+        </div>
+
+        <div>
+            <label for="filename">Filename:</label>
+            <input type="text" id="filename" name="filename">
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</body>
+</html>
+
